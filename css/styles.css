@@ -2,19 +2,22 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #header-container{
-    height: 55px;
+    height: 45px;
     position: sticky;
     top: 0;
     width: 100%;
+    /* É NECESSÁRIO COLOCAR BOX-SHADOW */
 }
 
 #header{
     width: 100%;
     height: 100%;
     display: block;
+    background-color: #fff;
 }
 
 .header-group{
@@ -50,6 +53,9 @@ body{
 
 .footer{
     margin: 20px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    font-size: 14px;
 }
 
 .footer-container{
@@ -80,22 +86,23 @@ body{
 .footer-links-group{
     flex: 1;
     margin-inline-end: 16px;
-    min-width: 150px;
+    min-width: 140px;
     width: 25%;
 }
 
-.footer-links-header{
-    font-weight: 700;
-    margin: 0px 0 20px 0;
+.footer-links-header, .footer-contacts-header{
+    font-weight: 600;
+    font-size: 16px;
+    word-spacing: -.25px;
+    margin: 0px 0 16px 0;
 }
 
 .footer-links-item{
-    margin: 10px 0 10px 0;
-    font-size: 14px;
+    margin: 12px 0 12px 0;
 }
 
 .footer-links-item a{
-    color: #aaa;
+    color: #777;
 }
 
 .footer-links-item a:hover{
@@ -108,4 +115,35 @@ body{
     opacity: .2;
     height: 2px;
     margin: 20px 0 15px 0;
+}
+
+.footer-contacts{
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-contacts-container{
+    margin-bottom: 50px;
+}
+
+.footer-contacts-email input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-contacts-email-textbox{
+    width: 150px;
+}
+
+.footer-contacts-email{
+    border-radius: 12px;
+    border-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px 0 2px 15px;
+    width: fit-content;
 }
