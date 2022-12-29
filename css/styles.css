@@ -2,15 +2,17 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
+    background-color: #f7f7f7;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #header-container{
+    z-index: 1;
     height: 45px;
     position: sticky;
     top: 0;
     width: 100%;
-    /* É NECESSÁRIO COLOCAR BOX-SHADOW */
+    box-shadow: 0px 0px 500px 0px #888888;
 }
 
 #header{
@@ -49,6 +51,108 @@ body{
 
 .header-item{
     margin: 0 10px 0 10px;
+}
+
+.content-single{
+    margin-bottom: 15px;
+}
+
+.content a{
+    text-decoration: none;
+    color: #000;
+}
+
+.content-single-link-container{
+    height: 450px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-single-link{
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 12px;
+    width: max-content;
+}
+
+.content-single-content{
+    width: max-content;
+}
+
+#content-item-1{
+    background-image: url(https://i02.appmifile.com/532_operator_global/16/12/2022/3ba4eb1f1f1ac6a3f3b67acd601d3b03.jpg?f=webp);
+}
+
+#content-item-1 .content-single-link{
+    position: relative;
+    top: 65%;
+    left: 58%;
+    background-color: white;
+    color: black;
+}
+
+#content-item-2{
+    background-image: url(https://i02.appmifile.com/414_operator_global/19/12/2022/8aed579da417b6d8e39f26b2ae7a3666.png?f=webp);
+}
+
+#content-item-2 .content-single-content{
+    position: relative;
+    top: 25%;
+    left: 20%;
+}
+
+#content-item-2 .content-single-link{
+    position: relative;
+    top: 55%;
+    left: 20%;
+    background-color: black;
+    color: white;
+}
+
+#content-item-2 .content-single-content-header{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#content-item-2 .content-single-content-description{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.content-double{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-double .content-single{
+    width: 49%;
+    text-align: center;
+}
+
+.content-double .content-single-content{
+    width: 100%;
+}
+
+#content-item-3{
+    background-image: url(https://i02.appmifile.com/485_operator_global/26/10/2022/61cd92b9e45cf1a2043072982d9a8e1b.jpg?f=webp);
+}
+
+#content-item-4{
+    background-image: url(https://i02.appmifile.com/10_operator_global/19/12/2022/4b3de3908f2c94983f5038161ee232b1.png?f=webp);
+}
+
+#content-item-5{
+    background-image: url(https://i02.appmifile.com/220_operator_global/05/12/2022/30dad9d8deca08828eae4d97bf13c758.jpg?f=webp);
+}
+
+#content-item-6{
+    background-image: url(https://i02.appmifile.com/254_operator_global/04/11/2022/b1856a859f0377afb368053e2eb1acb6.jpg?f=webp);
+}
+
+#content-item-7{
+    background-image: url(https://i02.appmifile.com/672_operator_global/03/11/2022/68853b4e94cf93f59bf5a877a7e8fb37!500x500.png);
 }
 
 .footer{
@@ -146,4 +250,20 @@ body{
     border-style: solid;
     padding: 2px 0 2px 15px;
     width: fit-content;
+}
+
+#footer-copyright-and-cookies-and-language{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#footer-copyright{
+    width: -webkit-fill-available;
+}
+
+.footer-cookies-and-languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: -webkit-fill-available;
 }
