@@ -67,6 +67,12 @@ body{
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #fff;
+    transition: box-shadow ease .2s;
+}
+
+.content-single-link-container:hover{
+    box-shadow: 2px 1px 10px #00000020;
 }
 
 .content-single-link{
@@ -77,7 +83,39 @@ body{
 }
 
 .content-single-content{
+    position: relative;
+    top: 50px;
     width: max-content;
+}
+
+.content-single-content-header{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.content-single-content-description{
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-single-content-link{
+    margin-top: 10px;
+    color: #dd6600;
+}
+
+.content-single-content-link:hover{
+    text-decoration: underline;
+}
+
+.xiaomi{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.redmi{
+    font-weight: 500;
 }
 
 #content-item-1{
@@ -112,7 +150,6 @@ body{
 
 #content-item-2 .content-single-content-header{
     font-weight: 600;
-    font-size: 32px;
 }
 
 #content-item-2 .content-single-content-description{
@@ -126,7 +163,7 @@ body{
     justify-content: space-around;
 }
 
-.content-double .content-single{
+.content-double .content-single, .content-double .content-double{
     width: 49%;
     text-align: center;
 }
@@ -139,12 +176,21 @@ body{
     background-image: url(https://i02.appmifile.com/485_operator_global/26/10/2022/61cd92b9e45cf1a2043072982d9a8e1b.jpg?f=webp);
 }
 
+#content-item-3 .content-single-content-header{
+    font-weight: 300;
+}
+
 #content-item-4{
     background-image: url(https://i02.appmifile.com/10_operator_global/19/12/2022/4b3de3908f2c94983f5038161ee232b1.png?f=webp);
 }
 
 #content-item-5{
     background-image: url(https://i02.appmifile.com/220_operator_global/05/12/2022/30dad9d8deca08828eae4d97bf13c758.jpg?f=webp);
+    color: #fff;
+}
+
+#content-item-5 .content-single-content-link{
+    color: #fff;
 }
 
 #content-item-6{
@@ -153,6 +199,8 @@ body{
 
 #content-item-7{
     background-image: url(https://i02.appmifile.com/672_operator_global/03/11/2022/68853b4e94cf93f59bf5a877a7e8fb37!500x500.png);
+    background-size: 80%;
+    background-position-y: bottom;
 }
 
 .footer{
